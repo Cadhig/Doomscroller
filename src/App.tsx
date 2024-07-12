@@ -1,9 +1,14 @@
-import './App.css'
+
+import Header from './components/Header'
+import StoryCarousel from './components/StoryCarousel'
 
 function App() {
 
   return (
-    <p className='text-red-800'>test</p>
+    <div className='h-svh'>
+      <Header />
+      <StoryCarousel />
+    </div>
   )
 }
 
