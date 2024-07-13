@@ -3,7 +3,7 @@ import { Heart, MessageCircle, Forward } from "lucide-react"
 export default function Feed() {
 
     return (
-        <div>
+        <div className="h-3/4">
             {feed.map((feedData: Post, index: number) => {
                 return <div key={index} className="flex flex-col gap-2">
                     <div className="flex gap-2 items-center mx-2">

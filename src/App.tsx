@@ -6,9 +6,11 @@ function App() {
 
   return (
     <div className='h-svh'>
-      <Header />
-      <StoryCarousel />
-      <Feed />
+      <div className='overflow-auto h-full'>
+        <Header />
+        <StoryCarousel />
+        <Feed />
+      </div>
       <BottomBar />
     </div>
   )
