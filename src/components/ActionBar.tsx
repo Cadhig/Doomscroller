@@ -9,9 +9,9 @@ export default function ActionBar() {
                 <House size={28} />
                 <p className="hidden lg:inline hover:underline">Home</p>
             </div>
-            <div className="flex items-center gap-4 text-lg font-bold cursor-pointer">
+            <div className="hidden lg:flex lg:items-center lg:gap-4 lg:text-lg lg:font-bold lg:cursor-pointer">
                 <Heart size={28} className="hidden lg:inline" />
-                <p className="hidden lg:inline hover:underline ">Notifications</p>
+                <p className="hidden lg:block hover:underline ">Notifications</p>
             </div>
             <div className="flex items-center gap-4 text-lg font-bold cursor-pointer">
                 <Search size={28} />
@@ -21,7 +21,7 @@ export default function ActionBar() {
                 <SquarePlus size={28} />
                 <p className="hidden lg:inline hover:underline">Create</p>
             </div>
-            <div className="flex items-center gap-4 text-lg font-bold cursor-pointer">
+            <div className="hidden lg:flex lg:items-center lg:gap-4 lg:text-lg lg:font-bold lg:cursor-pointer">
                 <MessageCircleMore size={28} className="hidden lg:inline" />
                 <p className="hidden lg:inline hover:underline">Messages</p>
             </div>
