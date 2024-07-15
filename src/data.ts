@@ -9,6 +9,14 @@ import GojoSelfie from './assets/GojoSelfie.jpg'
 import Spiritbox from './assets/Spiritbox.jpg'
 import PewdiepieFamily from './assets/PewdiepieFamily.jpg'
 import LobsteringBoat from './assets/LobsteringBoat.jpg'
+import OldWoman from './assets/OldWoman.jpg'
+import RandomMan from './assets/RandomMan.jpg'
+import TomHolland from './assets/TomHolland.jpg'
+import WomenAtBeach from './assets/WomenAtBeach.jpg'
+import WomanWithDrink from './assets/WomanWithDrink.jpg'
+import BillieElish from './assets/BillieEilish.jpg'
+import RickAstley from './assets/RickAstley.jpg'
+import Spiderman from './assets/Spiderman.jpg'
 
 export interface StoryIcons {
     img: string
@@ -75,7 +83,9 @@ export const feed: Post[] = [
     {
         profileImg: Courtney,
         username: 'courtneylaplante',
+        location: "Chicago, Illinois",
         image: Spiritbox,
+        description: "I loved the crowd in Chicago tonight! Ya'll are the best!",
         likes: 972,
         time: '1 day ago'
     },
@@ -96,6 +106,55 @@ export const feed: Post[] = [
         description: "It's lobster season!",
         time: '4 days ago'
     },
+    {
+        profileImg: TomHolland,
+        username: 'tomholland',
+        image: Spiderman,
+        description: "I cant believe i get to play spiderman!",
+        likes: 935,
+        time: '5 days ago'
+    },
+    {
+        profileImg: WomanWithDrink,
+        username: 'sierra_bush',
+        location: 'Miami, Florida',
+        image: WomenAtBeach,
+        likes: 235,
+        time: '4 days ago'
+    },
 
 ]
 
+export interface Accounts {
+    img: string,
+    username: string,
+    followedBy?: string
+}
+
+export const suggestedAccounts: Accounts[] = [
+    {
+        img: TomHolland,
+        username: "tomholland",
+        followedBy: "sierra_bush, gojosatoru"
+    },
+    {
+        img: RandomMan,
+        username: "jason.ohare",
+        followedBy: "courtneylaplante"
+    },
+    {
+        img: OldWoman,
+        username: "grandma_gertrude",
+        followedBy: "bb_art, sierra_bush"
+    },
+    {
+        img: BillieElish,
+        username: "billieeilish",
+        followedBy: "courtneylaplante, atlantic.fishery, pewdiepie"
+    },
+    {
+        img: RickAstley,
+        username: "officialrickastley",
+        followedBy: "gojosatoru"
+    }
+]
