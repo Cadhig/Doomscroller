@@ -4,7 +4,7 @@ import Me from '../assets/Me.jpg'
 export default function StoryCarousel() {
 
     return (
-        <div className="flex gap-4 overflow-auto m-4 hideScrollbar">
+        <div className="flex gap-2 overflow-auto ml-2 mb-2 hideScrollbar lg:mt-4">
             <div>
                 <img src={Me} alt="" className="w-16 h-16 rounded-full object-cover" />
                 <p className="text-xs text-black/70 truncate w-16 text-center">Your story</p>
