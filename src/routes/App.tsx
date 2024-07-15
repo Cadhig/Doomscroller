@@ -1,8 +1,8 @@
-import Header from './components/MobileHeader'
-import StoryCarousel from './components/StoryCarousel'
-import Feed from './components/Feed'
-import ActionBar from './components/ActionBar'
-import FollowSuggestions from './components/FollowSuggestion'
+import Header from '../components/MobileHeader'
+import StoryCarousel from '../components/StoryCarousel'
+import Feed from '../components/Feed'
+import ActionBar from '../components/ActionBar'
+import FollowSuggestions from '../components/FollowSuggestion'
 function App() {
 
   return (
