@@ -202,7 +202,7 @@ export interface ProfileImages {
     img: string
 }
 
-export const profileImgs = [
+export const profileImgs: ProfileImages[] = [
     {
         img: InTheWild
     },
@@ -235,5 +235,42 @@ export const profileImgs = [
     },
     {
         img: InTheMiddleAges
+    }
+]
+
+export interface Messages {
+    img: string,
+    username: string,
+    message: string,
+}
+
+export const messages: Messages[] = [
+    {
+        img: Bear,
+        username: 'bb_art',
+        message: 'Thanks!'
+    },
+    {
+        img: BillieElish,
+        username: 'billieeilish',
+        message: 'Hi Billie, i just wanted to say that i am a huge fan, i know you wont see this but i appreciate your music!'
+    },
+    {
+        img: WomanWithDrink,
+        username: 'sierra_bush',
+        message: 'girl i know... I cant believe he said that to you'
+    },
+    {
+        img: Gojo,
+        username: 'gojosatoru',
+        message: '今夜パーティーに来ますか？'
+    }
+]
+
+export const messageRequests: Messages[] = [
+    {
+        img: RandomMan,
+        username: 'jason.ohare',
+        message: 'Are you looking for a photographer?'
     }
 ]

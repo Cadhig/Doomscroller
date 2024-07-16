@@ -4,7 +4,7 @@ import App from './routes/App.tsx'
 import Profile from './routes/Profile.tsx'
 import Location from './routes/Location.tsx'
 import Story from './routes/Story.tsx'
-import Messages from './routes/Messages.tsx'
+import Dms from './routes/Dms.tsx'
 import Explore from './routes/Explore.tsx'
 import './index.css'
 import {
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/messages',
-    element: <Messages />
+    element: <Dms />
   },
   {
     path: '/explore',

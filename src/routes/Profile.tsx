@@ -10,7 +10,7 @@ export default function Profile() {
     const classes = isFollowing ? 'border w-1/2 rounded bg-0-doomBlue text-white p-1' : 'border w-1/2 rounded bg-black/50 text-white p-1'
 
     return (
-        <div className="lg:flex lg:flex-row-reverse lg:justify-between h-svh">
+        <div className="lg:flex lg:flex-row-reverse lg:justify-between h-svh hideScrollbar">
             <FollowSuggestions />
             <Header />
             <div className="flex flex-col gap-4 m-4 lg:w-1/2 overflow-auto hideScrollbar">
