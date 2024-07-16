@@ -18,6 +18,16 @@ import BillieElish from './assets/BillieEilish.jpg'
 import RickAstley from './assets/RickAstley.jpg'
 import Spiderman from './assets/Spiderman.jpg'
 import Me from './assets/Me.jpg'
+import InTheOcean from './assets/InTheOcean.jpg'
+import InTheMolt from './assets/InTheMolt.jpg'
+import InTheJungle from './assets/InTheJungle.jpg'
+import InTheDesert from './assets/InTheDesert.jpg'
+import InTheUnknown from './assets/InTheUnknown.jpg'
+import InTheRiver from './assets/InTheRiver.jpg'
+import InTheConcreteJungle from './assets/InTheConcreteJungle.jpg'
+import InTheForest from './assets/InTheForest.jpg'
+import InTheAbyss from './assets/InTheAbyss.jpg'
+import InTheMiddleAges from './assets/InTheMiddleAges.jpg'
 
 export interface StoryIcons {
     img: string
@@ -161,5 +171,69 @@ export const suggestedAccounts: Accounts[] = [
         img: RickAstley,
         username: "officialrickastley",
         followedBy: "gojosatoru"
+    }
+]
+
+export interface ProfileType {
+    profileImg: string,
+    username: string,
+    bio: string,
+    pronouns?: string
+    posts: number,
+    followers: number,
+    following: number,
+    name: string,
+}
+
+export const profile: ProfileType[] = [
+    {
+        profileImg: Bear,
+        username: 'bb_art',
+        bio: "Hey! I'm Jason, an artist based out of Houston, Texas. I take pride in my work!",
+        pronouns: 'he/him',
+        posts: 11,
+        followers: 426,
+        following: 43,
+        name: "Jason Bottler"
+    }
+]
+
+export interface ProfileImages {
+    img: string
+}
+
+export const profileImgs = [
+    {
+        img: InTheWild
+    },
+    {
+        img: InTheDesert
+    },
+    {
+        img: InTheOcean
+    },
+    {
+        img: InTheJungle
+    },
+    {
+        img: InTheMolt
+    },
+    {
+        img: InTheRiver
+    },
+    {
+        img: InTheUnknown
+    },
+    {
+        img: InTheAbyss
+    },
+    {
+        img: InTheConcreteJungle
+    },
+    {
+        img: InTheForest
+    },
+    {
+        img: InTheMiddleAges
     }
 ]
