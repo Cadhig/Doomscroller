@@ -1,6 +1,5 @@
 import { story, StoryIcons } from "../data.ts"
 import { Link } from "react-router-dom"
-import Me from '../assets/Me.jpg'
 
 export default function StoryCarousel() {
 
