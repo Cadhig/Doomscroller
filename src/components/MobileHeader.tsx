@@ -10,7 +10,9 @@ export default function Header() {
             </Link>
             <div className="flex gap-4 cursor-pointer">
                 <Heart className="active:text-black/60" />
-                <MessageCircleMore className="active:text-black/60" />
+                <Link to={'/messages'}>
+                    <MessageCircleMore className="active:text-black/60" />
+                </Link>
             </div>
         </div>
     )

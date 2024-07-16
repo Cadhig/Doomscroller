@@ -9,7 +9,6 @@ export default function Profile() {
 
     return (
         <div>
-
             <Header />
             <div className="flex flex-col gap-4 m-4">
                 <div className="flex w-full">
@@ -52,8 +51,8 @@ export default function Profile() {
                         </div>
                     })}
                 </div>
-                <ActionBar />
             </div>
+            <ActionBar />
         </div>
     )
 }
