@@ -17,6 +17,7 @@ import WomanWithDrink from './assets/WomanWithDrink.jpg'
 import BillieElish from './assets/BillieEilish.jpg'
 import RickAstley from './assets/RickAstley.jpg'
 import Spiderman from './assets/Spiderman.jpg'
+import Me from './assets/Me.jpg'
 
 export interface StoryIcons {
     img: string
@@ -25,6 +26,10 @@ export interface StoryIcons {
 }
 
 export const story: StoryIcons[] = [
+    {
+        img: Me,
+        name: 'Your story'
+    },
     {
         img: Courtney,
         name: 'courtneylaplante'

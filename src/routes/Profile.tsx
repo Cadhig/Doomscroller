@@ -3,7 +3,7 @@ export default function Profile() {
 
     return (
         <div>
-            <p>test</p>
+            <p>profile</p>
         </div>
     )
 }

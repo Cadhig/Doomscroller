@@ -1,4 +1,5 @@
-import { House, Search, SquarePlus, Clapperboard, CircleUser, MessageCircleMore, Heart } from "lucide-react"
+import { House, Compass, SquarePlus, Clapperboard, CircleUser, MessageCircleMore, Heart } from "lucide-react"
+import { Link } from "react-router-dom"
 import DesktopHeader from "./DesktopHeader"
 export default function ActionBar() {
 
@@ -13,23 +14,29 @@ export default function ActionBar() {
                 <Heart size={28} className="hidden lg:inline" />
                 <p className="hidden lg:block hover:underline ">Notifications</p>
             </div>
-            <div className="flex items-center gap-4 text-lg font-bold cursor-pointer">
-                <Search size={28} />
-                <p className="hidden lg:inline hover:underline">Search</p>
-            </div>
+            <Link to={'/explore'}>
+                <div className="flex items-center gap-4 text-lg font-bold cursor-pointer">
+                    <Compass size={28} />
+                    <p className="hidden lg:inline hover:underline">Explore</p>
+                </div>
+            </Link>
             <div className="flex items-center gap-4 text-lg font-bold cursor-pointer">
                 <SquarePlus size={28} />
                 <p className="hidden lg:inline hover:underline">Create</p>
             </div>
-            <div className="hidden lg:flex lg:items-center lg:gap-4 lg:text-lg lg:font-bold lg:cursor-pointer">
-                <MessageCircleMore size={28} className="hidden lg:inline" />
-                <p className="hidden lg:inline hover:underline">Messages</p>
-            </div>
+            <Link to={'/messages'}>
+                <div className="hidden lg:flex lg:items-center lg:gap-4 lg:text-lg lg:font-bold lg:cursor-pointer">
+                    <MessageCircleMore size={28} className="hidden lg:inline" />
+                    <p className="hidden lg:inline hover:underline">Messages</p>
+                </div>
+            </Link>
             <Clapperboard size={28} className="inline lg:hidden" />
-            <div className="flex items-center gap-4 text-lg font-bold cursor-pointer">
-                <CircleUser size={28} />
-                <p className="hidden lg:inline hover:underline">Profile</p>
-            </div>
+            <Link to={'/profile'}>
+                <div className="flex items-center gap-4 text-lg font-bold cursor-pointer">
+                    <CircleUser size={28} />
+                    <p className="hidden lg:inline hover:underline">Profile</p>
+                </div>
+            </Link>
         </div>
     )
 }
