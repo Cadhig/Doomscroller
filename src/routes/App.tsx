@@ -8,7 +8,7 @@ function App() {
   return (
     <div className='lg:flex lg:justify-between lg:flex-row-reverse h-svh'>
       <FollowSuggestions />
-      <div className='h-svh lg:w-1/2 xl:w-1/4'>
+      <div className='h-svh lg:w-1/2'>
         <div className='overflow-auto h-full hideScrollbar'>
           <Header />
           <StoryCarousel />

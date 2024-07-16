@@ -5,9 +5,9 @@ export default function FollowSuggestions() {
 
     return (
         <div className="w-1/4 p-4 hidden lg:inline">
-            <h1 className="text-lg text-black/50">Suggestions for you</h1>
+            <h1 className="text-lg text-black/50 text-center">Suggestions for you</h1>
             {suggestedAccounts.map((suggestedAccountData: Accounts, index: number) => {
-                return <div key={index} className="flex flex-col py-1">
+                return <div key={index} className="flex flex-col py-1 items-end">
                     <Link to={'/profile'}><div className="flex gap-2">
                         <img src={suggestedAccountData.img} alt={suggestedAccountData.username} className="w-8 h-8 rounded-full object-cover cursor-pointer hover:shadow-md" />
                         <div className="flex flex-col">

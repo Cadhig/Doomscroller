@@ -1,4 +1,6 @@
 import { ProfileType, profile, ProfileImages, profileImgs } from "../data"
+import FollowSuggestions from "../components/FollowSuggestion"
+import { Link } from "react-router-dom"
 import ActionBar from "../components/ActionBar"
 import Header from "../components/MobileHeader"
 import { useState } from "react"
@@ -8,9 +10,10 @@ export default function Profile() {
     const classes = isFollowing ? 'border w-1/2 rounded bg-0-doomBlue text-white p-1' : 'border w-1/2 rounded bg-black/50 text-white p-1'
 
     return (
-        <div>
+        <div className="lg:flex lg:flex-row-reverse lg:justify-between h-svh">
+            <FollowSuggestions />
             <Header />
-            <div className="flex flex-col gap-4 m-4">
+            <div className="flex flex-col gap-4 m-4 lg:w-1/2 overflow-auto hideScrollbar">
                 <div className="flex w-full">
                     {profile.map((profileData: ProfileType, index: number) => {
                         return <div key={index} className="flex flex-col w-full">
@@ -42,7 +45,9 @@ export default function Profile() {
                 </div>
                 <div className="flex gap-2 ">
                     <button onClick={() => setFollow(!isFollowing)} className={classes}>{isFollowing ? 'Follow' : 'Following'}</button>
-                    <button className="border rounded bg-black/50 text-white w-1/2">Message</button>
+                    <Link to={'/messages'} className="border rounded bg-black/50 text-white w-1/2 flex items-center justify-center">
+                        <button>Message</button>
+                    </Link>
                 </div>
                 <div className=" grid grid-cols-3 w-full gap-1">
                     {profileImgs.map((imageData: ProfileImages, index: number) => {
@@ -53,6 +58,6 @@ export default function Profile() {
                 </div>
             </div>
             <ActionBar />
-        </div>
+        </div >
     )
 }
