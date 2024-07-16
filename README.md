@@ -9,6 +9,7 @@ A rebuild of Intsagram's UI! Responsive desgin makes this application usable on 
 - React
 - TypeScript
 - TailwindCSS
+- React Router
 
 ## Getting Started
 View Deployed version here: <br>
