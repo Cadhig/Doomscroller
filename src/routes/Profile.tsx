@@ -12,9 +12,9 @@ export default function Profile() {
 
             <Header />
             <div className="flex flex-col gap-4 m-4">
-                <div className="flex">
+                <div className="flex w-full">
                     {profile.map((profileData: ProfileType, index: number) => {
-                        return <div key={index} className="flex flex-col">
+                        return <div key={index} className="flex flex-col w-full">
                             <p className="font-bold text-lg w-full text-center">{profileData.username}</p>
                             <div className="flex gap-4 text-center">
                                 <img src={profileData.profileImg} alt={profileData.username} className="w-24 h-24 border rounded-full" />
