@@ -7,23 +7,23 @@ import FollowSuggestions from '../components/FollowSuggestion'
 import { useState } from 'react'
 
 function App() {
-  const [notification, setNotification] = useState(false)
-  console.log(notification)
+  const [notificationModal, setNotificationModal] = useState(false)
+  console.log(notificationModal)
   let notificationClass = 'hidden'
-  notification ? notificationClass = 'inline' : notificationClass = 'hidden'
+  notificationModal ? notificationClass = 'inline' : notificationClass = 'hidden'
 
   return (
     <div className='lg:flex lg:justify-between lg:flex-row-reverse h-svh'>
       <FollowSuggestions />
       <div className='h-svh lg:w-1/2'>
         <div className='overflow-auto h-full hideScrollbar'>
-          <Notifications classes={notificationClass} setNotification={setNotification} notification={notification} />
-          <Header setNotification={setNotification} notification={notification} />
+          <Notifications classes={notificationClass} setNotificationModal={setNotificationModal} notificationModal={notificationModal} />
+          <Header setNotificationModal={setNotificationModal} notificationModal={notificationModal} />
           <StoryCarousel />
           <Feed />
         </div>
       </div>
-      <ActionBar setNotification={setNotification} notification={notification} />
+      <ActionBar setNotificationModal={setNotificationModal} notificationModal={notificationModal} />
     </div>
   )
 }

@@ -8,17 +8,17 @@ import Notifications from "../components/Notifications"
 
 export default function Profile() {
     const [isFollowing, setFollow] = useState(true)
-    const [notification, setNotification] = useState(false)
-    console.log(notification)
+    const [notificationModal, setNotificationModal] = useState(false)
+    console.log(notificationModal)
     let notificationClass = 'hidden'
-    notification ? notificationClass = 'inline' : notificationClass = 'hidden'
+    notificationModal ? notificationClass = 'inline' : notificationClass = 'hidden'
     const classes = isFollowing ? 'border w-1/2 rounded bg-0-doomBlue text-white p-1' : 'border w-1/2 rounded bg-black/50 text-white p-1'
 
     return (
         <div className="lg:flex lg:flex-row-reverse lg:justify-between h-svh hideScrollbar">
             <FollowSuggestions />
-            <Header setNotification={setNotification} notification={notification} />
-            <Notifications classes={notificationClass} setNotification={setNotification} notification={notification} />
+            <Header setNotificationModal={setNotificationModal} notificationModal={notificationModal} />
+            <Notifications classes={notificationClass} setNotificationModal={setNotificationModal} notificationModal={notificationModal} />
             <div className="flex flex-col gap-4 m-4 lg:w-1/2 overflow-auto hideScrollbar">
                 <div className="flex w-full">
                     {profile.map((profileData: ProfileType, index: number) => {
@@ -63,7 +63,7 @@ export default function Profile() {
                     })}
                 </div>
             </div>
-            <ActionBar setNotification={setNotification} notification={notification} />
+            <ActionBar setNotificationModal={setNotificationModal} notificationModal={notificationModal} />
         </div >
     )
 }

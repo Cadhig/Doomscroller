@@ -13,8 +13,8 @@ import {
 
 export interface Notification {
   classes?: string,
-  setNotification: (props: boolean) => void,
-  notification: boolean
+  setNotificationModal: (props: boolean) => void,
+  notificationModal: boolean
 }
 
 const router = createBrowserRouter([

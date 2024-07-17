@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 import DesktopHeader from "./DesktopHeader"
 import { Notification } from "../main"
 
-export default function ActionBar({ notification, setNotification }: Notification) {
+export default function ActionBar({ notificationModal, setNotificationModal }: Notification) {
 
     return (
         <div className="flex items-center justify-around h-14 fixed bottom-0 lg:static lg:w-1/4 lg:flex-col lg:h-full lg:justify-normal lg:items-start lg:gap-16 bg-white w-full lg:p-4 ">
@@ -14,7 +14,7 @@ export default function ActionBar({ notification, setNotification }: Notificatio
                     <p className="hidden lg:inline hover:underline">Home</p>
                 </div>
             </Link>
-            <div className="hidden lg:flex lg:items-center lg:gap-4 lg:text-lg lg:font-bold lg:cursor-pointer" onClick={() => setNotification(!notification)}>
+            <div className="hidden lg:flex lg:items-center lg:gap-4 lg:text-lg lg:font-bold lg:cursor-pointer" onClick={() => setNotificationModal(!notificationModal)}>
                 <Heart size={28} className=" lg:inline" />
                 <p className=" lg:block hover:underline ">Notifications</p>
             </div>
