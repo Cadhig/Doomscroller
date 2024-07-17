@@ -5,6 +5,7 @@ import Profile from './routes/Profile.tsx'
 import Story from './routes/Story.tsx'
 import Dms from './routes/Dms.tsx'
 import Explore from './routes/Explore.tsx'
+import Create from './routes/Create.tsx'
 import './index.css'
 import {
   createBrowserRouter,
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
   {
     path: '/explore',
     element: <Explore />
+  },
+  {
+    path: '/create',
+    element: <Create />
   }
 ])
 
