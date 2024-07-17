@@ -326,3 +326,46 @@ export const explore: Images[] = [
     }
 
 ]
+
+export interface NotificationForUser {
+    img: string,
+    username: string,
+    status: string,
+    comment?: string
+    time: string
+}
+
+export const notificationsForUser: NotificationForUser[] = [
+    {
+        img: Bear,
+        username: 'bb_art',
+        status: 'started following you',
+        time: '1h'
+    },
+    {
+        img: WomanWithDrink,
+        username: 'sierra_bush',
+        status: "liked your post",
+        time: '1h'
+    },
+    {
+        img: WomanWithDrink,
+        username: 'sierra_bush',
+        status: 'left a comment',
+        comment: ': girl you are SO cute!! ❤',
+        time: '1h'
+    },
+    {
+        img: RandomMan,
+        username: 'jason.ohare',
+        status: 'started following you',
+        time: '2h'
+    },
+    {
+        img: Gojo,
+        username: 'gojosatoru',
+        status: 'left a comment',
+        comment: ': 素敵な写真',
+        time: '3h'
+    }
+]
