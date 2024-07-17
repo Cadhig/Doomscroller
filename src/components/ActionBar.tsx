@@ -1,4 +1,4 @@
-import { House, Compass, SquarePlus, Clapperboard, CircleUser, MessageCircleMore, Heart } from "lucide-react"
+import { House, Compass, SquarePlus, CircleUser, MessageCircleMore, Heart } from "lucide-react"
 import { Link } from "react-router-dom"
 import DesktopHeader from "./DesktopHeader"
 import { Notification } from "../main"
@@ -14,10 +14,6 @@ export default function ActionBar({ notificationModal, setNotificationModal }: N
                     <p className="hidden lg:inline hover:underline">Home</p>
                 </div>
             </Link>
-            <div className="hidden lg:flex lg:items-center lg:gap-4 lg:text-lg lg:font-bold lg:cursor-pointer" onClick={() => setNotificationModal(!notificationModal)}>
-                <Heart size={28} className=" lg:inline" />
-                <p className=" lg:block hover:underline ">Notifications</p>
-            </div>
             <Link to={'/explore'}>
                 <div className="flex items-center gap-4 text-lg font-bold cursor-pointer">
                     <Compass size={28} />
@@ -36,7 +32,10 @@ export default function ActionBar({ notificationModal, setNotificationModal }: N
                     </div>
                 </Link>
             </div>
-            <Clapperboard size={28} className="inline lg:hidden" />
+            <div className=" lg:flex lg:items-center lg:gap-4 lg:text-lg lg:font-bold lg:cursor-pointer" onClick={() => setNotificationModal(!notificationModal)}>
+                <Heart size={28} />
+                <p className=" hidden lg:block hover:underline ">Notifications</p>
+            </div>
             <Link to={'/profile'}>
                 <div className="flex items-center gap-4 text-lg font-bold cursor-pointer">
                     <CircleUser size={28} />
