@@ -7,10 +7,8 @@ export default {
   theme: {
     extend: {
       colors: [{
-
         "doomBlue": "#4c68d7",
-      }
-      ]
+      }]
     },
   },
   plugins: [],

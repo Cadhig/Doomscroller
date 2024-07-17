@@ -9,7 +9,6 @@ import Notifications from "../components/Notifications"
 export default function Profile() {
     const [isFollowing, setFollow] = useState(true)
     const [notificationModal, setNotificationModal] = useState(false)
-    console.log(notificationModal)
     let notificationClass = 'hidden'
     notificationModal ? notificationClass = 'inline' : notificationClass = 'hidden'
     const classes = isFollowing ? 'border w-1/2 rounded bg-0-doomBlue text-white p-1' : 'border w-1/2 rounded bg-black/50 text-white p-1'
