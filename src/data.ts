@@ -28,6 +28,12 @@ import InTheConcreteJungle from './assets/InTheConcreteJungle.jpg'
 import InTheForest from './assets/InTheForest.jpg'
 import InTheAbyss from './assets/InTheAbyss.jpg'
 import InTheMiddleAges from './assets/InTheMiddleAges.jpg'
+import RainbowBagel from './assets/RainbowBagel.jpg'
+import Boba from './assets/Boba.jpg'
+import KylieJenner from './assets/KylieJenner.jpg'
+import Valorant from './assets/Valorant.jpg'
+import Beyonce from './assets/Beyonce.jpg'
+import GameOfThrones from './assets/GameOfThrones.jpg'
 
 export interface StoryIcons {
     img: string
@@ -198,11 +204,11 @@ export const profile: ProfileType[] = [
     }
 ]
 
-export interface ProfileImages {
+export interface Images {
     img: string
 }
 
-export const profileImgs: ProfileImages[] = [
+export const profileImgs: Images[] = [
     {
         img: InTheWild
     },
@@ -273,4 +279,50 @@ export const messageRequests: Messages[] = [
         username: 'jason.ohare',
         message: 'Are you looking for a photographer?'
     }
+]
+
+export const explore: Images[] = [
+    {
+        img: WomanWithDrink
+    },
+    {
+        img: InTheConcreteJungle
+    },
+    {
+        img: RickAstley
+    },
+    {
+        img: Spiderman
+    },
+    {
+        img: WomenAtBeach
+    },
+    {
+        img: InTheAbyss
+    },
+    {
+        img: Lobster
+    },
+    {
+        img: RainbowBagel
+    },
+    {
+        img: KylieJenner
+    },
+    {
+        img: Valorant
+    },
+    {
+        img: Boba
+    },
+    {
+        img: Beyonce
+    },
+    {
+        img: GameOfThrones
+    },
+    {
+        img: Gojo
+    }
+
 ]

@@ -1,4 +1,4 @@
-import { ProfileType, profile, ProfileImages, profileImgs } from "../data"
+import { ProfileType, profile, Images, profileImgs } from "../data"
 import FollowSuggestions from "../components/FollowSuggestion"
 import { Link } from "react-router-dom"
 import ActionBar from "../components/ActionBar"
@@ -50,7 +50,7 @@ export default function Profile() {
                     </Link>
                 </div>
                 <div className=" grid grid-cols-3 w-full gap-1">
-                    {profileImgs.map((imageData: ProfileImages, index: number) => {
+                    {profileImgs.map((imageData: Images, index: number) => {
                         return <div key={index} className="">
                             <img src={imageData.img} alt="" className="w-full h-full" />
                         </div>
