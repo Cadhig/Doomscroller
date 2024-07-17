@@ -1,5 +1,4 @@
 import Header from "../components/MobileHeader"
-import DesktopHeader from "../components/DesktopHeader"
 import ActionBar from "../components/ActionBar"
 import { explore, Images } from "../data"
 import FollowSuggestions from "../components/FollowSuggestion"
