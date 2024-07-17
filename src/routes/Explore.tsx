@@ -13,8 +13,8 @@ export default function Explore() {
         <div className="flex flex-col lg:flex-row-reverse lg:justify-between h-svh hideScrollbar">
             <FollowSuggestions />
             <Header setNotification={setNotification} notification={notification} />
+            <Notifications classes={notificationClass} setNotification={setNotification} notification={notification} />
             <div className=" flex flex-col gap-4 m-4 lg:w-1/2 overflow-auto hideScrollbar">
-                <Notifications classes={notificationClass} setNotification={setNotification} notification={notification} />
                 <div className="flex justify-center">
                     <input type="text" placeholder="explore" className="bg-black/10 w-3/4 border rounded-xl px-1" />
                 </div>

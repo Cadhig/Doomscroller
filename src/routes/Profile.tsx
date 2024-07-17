@@ -18,8 +18,8 @@ export default function Profile() {
         <div className="lg:flex lg:flex-row-reverse lg:justify-between h-svh hideScrollbar">
             <FollowSuggestions />
             <Header setNotification={setNotification} notification={notification} />
+            <Notifications classes={notificationClass} setNotification={setNotification} notification={notification} />
             <div className="flex flex-col gap-4 m-4 lg:w-1/2 overflow-auto hideScrollbar">
-                <Notifications classes={notificationClass} setNotification={setNotification} notification={notification} />
                 <div className="flex w-full">
                     {profile.map((profileData: ProfileType, index: number) => {
                         return <div key={index} className="flex flex-col w-full">
