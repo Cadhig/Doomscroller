@@ -11,6 +11,12 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
+export interface Notification {
+  classes?: string,
+  setNotification: (props: boolean) => void,
+  notification: boolean
+}
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -33,6 +39,7 @@ const router = createBrowserRouter([
     element: <Explore />
   }
 ])
+
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

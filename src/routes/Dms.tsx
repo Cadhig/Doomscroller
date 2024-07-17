@@ -3,8 +3,13 @@ import { SquarePen } from "lucide-react"
 import { Messages, messages, messageRequests } from "../data"
 import { useState } from "react"
 import FollowSuggestions from "../components/FollowSuggestion"
+import Notifications from "../components/Notifications"
 export default function Dms() {
     const [isPrimary, setIsPrimary] = useState(true)
+    const [notification, setNotification] = useState(false)
+    console.log(notification)
+    let notificationClass = 'hidden'
+    notification ? notificationClass = 'inline' : notificationClass = 'hidden'
     const messageView = isPrimary ? messages : messageRequests
     const primaryClasses = isPrimary ? 'w-1/2 border rounded bg-[#4c68d7] text-white' : 'w-1/2 border rounded bg-black/50 text-white'
     const requestsClasses = isPrimary ? 'w-1/2 border rounded bg-black/50 text-white' : 'w-1/2 border rounded bg-[#4c68d7] text-white'
@@ -17,6 +22,7 @@ export default function Dms() {
                     <h1 className="text-lg font-bold">Messages</h1>
                     <SquarePen />
                 </div>
+                <Notifications classes={notificationClass} setNotification={setNotification} notification={notification} />
                 <div className="flex gap-2 w-full">
                     <button onClick={() => setIsPrimary(true)} className={primaryClasses}>Primary</button>
                     <button onClick={() => setIsPrimary(false)} className={requestsClasses}>Requests</button>
@@ -31,7 +37,7 @@ export default function Dms() {
                     </div>
                 })}
             </div>
-            <ActionBar />
+            <ActionBar setNotification={setNotification} notification={notification} />
         </div>
     )
 }
