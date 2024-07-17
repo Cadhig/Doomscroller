@@ -18,7 +18,7 @@ function App() {
       <div className='h-svh lg:w-1/2'>
         <div className='overflow-auto h-full hideScrollbar'>
           <Notifications classes={notificationClass} setNotificationModal={setNotificationModal} notificationModal={notificationModal} />
-          <Header setNotificationModal={setNotificationModal} notificationModal={notificationModal} />
+          <Header />
           <StoryCarousel />
           <Feed />
         </div>

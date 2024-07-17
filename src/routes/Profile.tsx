@@ -16,7 +16,7 @@ export default function Profile() {
     return (
         <div className="lg:flex lg:flex-row-reverse lg:justify-between h-svh hideScrollbar">
             <FollowSuggestions />
-            <Header setNotificationModal={setNotificationModal} notificationModal={notificationModal} />
+            <Header />
             <Notifications classes={notificationClass} setNotificationModal={setNotificationModal} notificationModal={notificationModal} />
             <div className="flex flex-col gap-4 m-4 lg:w-1/2 overflow-auto hideScrollbar">
                 <div className="flex w-full">
