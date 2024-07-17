@@ -15,6 +15,9 @@ A rebuild of Intsagram's UI! Interactive buttons, and responsive design that mak
 - Realistic mock data
 - Recreation of mutliple UI features
 
+## Future Development
+- Make this a functioning social media application
+
 ## Getting Started
 To run this project locally:
 - Clone this repo
