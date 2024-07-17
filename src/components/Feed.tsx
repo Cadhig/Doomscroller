@@ -11,7 +11,7 @@ export default function Feed() {
                         <Link to={'/profile'}><img src={feedData.profileImg} alt={feedData.username} className="w-8 h-8 rounded-full object-cover cursor-pointer" /></Link>
                         <div className="text-sm w-full">
                             <Link to={'/profile'}><p className="font-bold cursor-pointer hover:text-black/80">{feedData.username}</p></Link>
-                            <Link to={'/location'}><p className="text-black/70 hover:underline cursor-pointer text-xs">{feedData.location}</p></Link>
+                            <p className="text-black/70 text-xs">{feedData.location}</p>
                         </div>
                     </div>
                     <img src={feedData.image} alt="post image" />
