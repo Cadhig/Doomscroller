@@ -9,6 +9,7 @@ export default function Notifications({ setNotificationModal, notificationModal,
                 <div className="bg-white  h-1/2 w-64 lg:w-1/4 border rounded shadow-lg flex flex-row-reverse">
                     <X size={32} className="text-red-700" onClick={() => setNotificationModal(!notificationModal)} />
                     <div className="overflow-auto flex flex-col gap-1 p-2 hideScrollbar w-full">
+                        <p className="text-center font-bold ml-2">Notifications</p>
                         {notificationsForUser.map((notifData: NotificationForUser, index: number) => {
                             return <div key={index} className="flex gap-2 items-center">
                                 <img src={notifData.img} alt="user image" className="size-12 border rounded-full object-cover flex-shrink-0" />
